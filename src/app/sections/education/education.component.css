@@ -1,0 +1,34 @@
+.education-section {
+  background-color: #0f172a;
+  padding: 60px 0;
+}
+
+.education-section h2 {
+  color: white;
+  margin-left: 130px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.education-section .card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 20px 130px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-section .card h3 {
+  color: #1a202c;
+  margin-bottom: 5px;
+}
+
+.education-section .card p {
+  color: #2d3748;
+  margin: 3px 0;
+}
+
+.education-section .note {
+  color: #4a5568;
+  font-weight: 500;
+}

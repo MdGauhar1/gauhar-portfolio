@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px gray;
+  border-radius: 8px;
+}
+h1, h2 {
+  color: #2c3e50;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 5px 0;
+}
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+form button {
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background: #56657e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer .social-icons a {
+  color: #f2f2f2;
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

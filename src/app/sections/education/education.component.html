@@ -1,0 +1,9 @@
+<div class="education-section">
+  <h2>Education</h2>
+
+  <div class="card" *ngFor="let edu of education">
+    <h3>{{ edu.institution }}</h3>
+    <p>{{ edu.details }}</p>
+    <p class="note">{{ edu.note }}</p>
+  </div>
+</div>
