@@ -1,3 +1,6 @@
+
+
+
 h2 {
   color: rgb(0, 0, 0);
   margin-left: 130px;
@@ -26,4 +29,27 @@ h2 {
 .note {
   color: #4a5568;
   font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  h2 {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card {
+    margin: 20px 20px;
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p,
+  .note {
+    font-size: 15px;
+  }
 }

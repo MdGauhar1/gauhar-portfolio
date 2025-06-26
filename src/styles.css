@@ -99,3 +99,91 @@ html {
 
 
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #56657e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.left {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+}
+
+.right a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.right a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #00d1b2, #2ecc71);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+
+.right a:hover {
+  color: #00d1b2;
+}
+
+.right a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Hamburger icon - hidden by default */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #56657e;
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+
+  .right.active {
+    display: flex;
+  }
+
+  .right a {
+    margin: 10px 0;
+  }
+}
