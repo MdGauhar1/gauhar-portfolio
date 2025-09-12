@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href /gauhar-portfolio/ && npx angular-cli-ghpages --dir=dist/gauhar-portfolio"
+    "deploy": "ng build --configuration production --base-href /gauhar-portfolio/ && npx angular-cli-ghpages --dir=dist/gauhar-portfolio/browser"
 
   },
   "private": true,

@@ -22,7 +22,7 @@ export class PersonalProjectsComponent {
         'Deployed frontend on GitHub Pages & backend.'
       ],
       link: 'https://mdgauhar1.github.io/wecare-hospital-Frontend/',
-      bgImage: '/assets/wecare.png'
+      bgImage: 'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/wecare.png?raw=true'
     },
     {
       title: 'BookApp',
@@ -34,7 +34,7 @@ export class PersonalProjectsComponent {
         'UI & Deployment: Styled with modern CSS and deployed using GitHub Pages.',
       ],
       link: 'https://MdGauhar1.github.io/BookApp-Angular/',
-      bgImage:'/assets/bookapp.png'
+      bgImage:'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/bookapp.png?raw=true'
     },
     {
       title: 'AiVoiceApp',
@@ -48,7 +48,7 @@ export class PersonalProjectsComponent {
         'End-to-end full stack AI voice app.'
       ],
       link: 'https://MdGauhar1.github.io/AiBootFrontend/',
-      bgImage:'/assets/aibot.png'
+      bgImage:'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/aibot.png?raw=true'
     }
   ];
 }
