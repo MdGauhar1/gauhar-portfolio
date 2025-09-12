@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PersonalProjectsComponent } from "./personalProjects.component";
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PersonalProjectsComponent],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
@@ -29,18 +30,6 @@ export class ProjectsComponent {
         'Hibernate ORM: Used Hibernate for effective ORM mapping, enabling seamless interaction between the application and database. Tuned performance using lazy/eager fetching and caching strategies.',
         'Notification System: Implemented SMS and Email notification modules to send real-time updates to students and sponsors. Integrated Twilio for SMS and JavaMailSender for email functionality.'
       ]
-    },
-     {
-       title: 'BookApp - Personal Project',
-       duration: 'Personal Project',
-       role: 'Full Stack Developer',
-       responsibilities: [
-          'Angular Frontend: Developed using Angular with modular architecture and routing.',
-          'Third-Party API: Integrated live book data using a third-party public API for dynamic content.',
-          'UI & Deployment: Styled with modern CSS and deployed using GitHub Pages.',
-      ],
-       link: 'https://MdGauhar1.github.io/BookApp-Angular/'
-}
-
+    }
   ];
 }

@@ -10,12 +10,32 @@
 </head>
 <body>
   <app-root></app-root>
+
+
   <script>
   function toggleMenu() {
     const menu = document.getElementById("navMenu");
     menu.classList.toggle("active");
   }
+
+  // Close menu when a link is clicked
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("#navMenu a");
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        const menu = document.getElementById("navMenu");
+        menu.classList.remove("active");
+      });
+    });
+  });
 </script>
+
+<!-- <script>
+  function toggleMenu() {
+    const menu = document.getElementById("navMenu");
+    menu.classList.toggle("active");
+  }
+</script> -->
 
 </body>
 </html>

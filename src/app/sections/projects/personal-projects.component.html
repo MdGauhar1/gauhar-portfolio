@@ -1,0 +1,24 @@
+<div class="personal-projects">
+  <h1>Personal Projects</h1>
+  <div class="projects-grid">
+    <div *ngFor="let project of personalProjects" class="project-card">
+      
+      <!-- Image on top -->
+      <div class="project-image" [style.backgroundImage]="'url(' + project.bgImage + ')'"></div>
+      
+      <!-- Content below -->
+      <div class="project-content">
+        <div class="project-header">
+          <i class="fa-solid fa-laptop-code project-icon"></i>
+          <h3>{{ project.title}}</h3><a *ngIf="project.link" [href]="project.link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> View</a>
+        </div>
+        <p><strong>Duration:</strong> {{ project.duration }}</p>
+        <p><strong>Type:</strong> {{ project.type }}</p>
+        <ul>
+          <li *ngFor="let task of project.details">{{ task }}</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

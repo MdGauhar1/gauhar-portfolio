@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 20px 30px;
   background-color:  #56657e;
   color: white;
   position: sticky;
@@ -24,6 +24,7 @@
   display: inline-block;
   padding-bottom: 4px;
   transition: color 0.3s ease;
+  font-size: 17.5px;
 }
 
 .right a::after {
