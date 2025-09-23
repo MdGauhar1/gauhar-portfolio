@@ -109,3 +109,44 @@
     font-size: 14px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-box p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  line-height: 1.6;
+}
+
+.contact-box p a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  margin-right: 6px;
+}
+
+.contact-box p a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Optional: add comma after each link except last */
+.contact-box p a:not(:last-of-type)::after {
+  content: ",";
+  margin-left: 3px;
+}
