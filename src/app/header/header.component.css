@@ -18,14 +18,15 @@
 }
 
 .right a {
-  color: white;
+  color: #DCDCDC;
   text-decoration: none;
   margin-left: 20px;
   position: relative;
   display: inline-block;
   padding-bottom: 4px;
   transition: color 0.3s ease;
-  font-size: 17.5px;
+  font-size: 18.5px;
+  font-weight: bold;
 }
 
 .right a::after {

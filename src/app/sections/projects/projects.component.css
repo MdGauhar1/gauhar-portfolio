@@ -1,78 +1,292 @@
 .project-section {
   background-color: #0f172a;
-  padding: 60px 0;
+  padding: 60px 100px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
-  color: white;
-  margin-left: 130px;
-  font-size: 2rem;
+.project-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 25px;
-  margin: 0 130px 40px 130px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0, 122, 255, 0.2);
+  gap: 30px;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
 }
 
-.project-card h3 {
-  margin-top: 0;
-  color: #1a202c;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-.project-card p {
-  margin: 8px 0;
-  color: #2d3748;
+.image-container {
+  flex: 1 1 300px;
+  max-width: 320px;
+  height: 180px;
+  background: #1e293b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.project-card ul {
-  padding-left: 20px;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
-.project-card li {
-  color: #4a5568;
-  margin-bottom: 10px;
-  line-height: 1.5;
+.placeholder-icon {
+  font-size: 4rem;
+  color: #38bdf8;
 }
 
-/* Stylish link button */
-.project-link {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 18px;
-  background: linear-gradient(to right, #6a11cb, #2575fc);
+.project-details {
+  flex: 2 1 500px;
+  color: #e2e8f0;
+  position: relative;
+}
+
+.featured-badge {
+  background-color: #38bdf8;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  right: 0;
+  user-select: none;
+}
+
+.project-details h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.project-details p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #94a3b8;
+}
+
+.tech-tags {
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #1e40af;
+  color: #cbd5e1;
+  padding: 6px 12px;
   border-radius: 8px;
+  margin-right: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
+  user-select: none;
 }
 
-.project-link:hover {
-  background: linear-gradient(to right, #2575fc, #6a11cb);
+.code-btn {
+  background-color: #0ea5e9;
+  color: white;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  h2 {
-    margin-left: 20px;
-    font-size: 1.5rem;
-    text-align: center;
+.code-btn:hover {
+  background-color: #0284c7;
+}
+
+.demo-btn {
+  background-color: #374151;
+  color: white;
+}
+
+.demo-btn:hover {
+  background-color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-container,
+  .project-details {
+    max-width: 100%;
+  }
+
+  .image-container {
+    height: 220px;
+  }
+
+  .featured-badge {
+    position: static;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ✅ Large Screens Slight Adjustment */
+@media (max-width: 1200px) {
+  .project-section {
+    padding: 60px 70px;
+  }
+}
+
+/* ✅ Tablets (iPad, Galaxy Tab) */
+@media (max-width: 900px) {
+  .project-section {
+    padding: 60px 40px;
   }
 
   .project-card {
-    margin: 0 20px 30px 20px;
-    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
   }
 
-  .project-card h3 {
-    font-size: 1.2rem;
+  .image-container {
+    width: 100%;
+    max-width: 100%;
+    height: 230px;
   }
 
-  .project-card p,
-  .project-card li {
-    font-size: 15px;
+  .project-details {
+    flex: unset;
+    width: 100%;
+  }
+
+  .featured-badge {
+    position: static;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
+}
+
+/* ✅ Normal Mobile Phones (iPhone 6/7/8, Samsung) */
+@media (max-width: 600px) {
+  .project-section {
+    padding: 50px 20px;
+  }
+
+  .project-card {
+    padding: 22px;
+    gap: 20px;
+  }
+
+  .image-container {
+    height: 200px;
+  }
+
+  .project-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-details p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ Small Phones (e.g., iPhone SE / older Android) */
+@media (max-width: 400px) {
+  .project-card {
+    padding: 18px;
+    gap: 16px;
+  }
+
+  .image-container {
+    height: 170px;
+  }
+
+  .project-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
   }
 }

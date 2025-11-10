@@ -149,4 +149,165 @@
 
 
 
+/* ✅ Large Laptops */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 70px 80px;
+  }
+  .about-container {
+    gap: 40px;
+  }
+}
+
+/* ✅ Tablets */
+@media (max-width: 900px) {
+  .about-section {
+    padding: 60px 50px;
+    text-align: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .about-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .highlight-box {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+/* ✅ Mobile Devices */
+@media (max-width: 600px) {
+  .about-section {
+    padding: 45px 25px;
+  }
+
+  .profile-card {
+    padding: 22px;
+  }
+
+  .profile-circle {
+    width: 200px;
+    height: 200px;
+    font-size: 1.5rem;
+  }
+
+  .profile-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .profile-card p {
+    font-size: 0.9rem;
+  }
+
+  .stats span {
+    font-size: 1.2rem;
+  }
+
+  .about-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .highlight-box {
+    padding: 16px;
+  }
+}
+
+/* ✅ Small Phones (Very Small Screens) */
+@media (max-width: 400px) {
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-circle {
+    width: 170px;
+    height: 170px;
+    font-size: 1.3rem;
+  }
+
+  .profile-card {
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ✅ Normal Phones (iPhone 6/7/8, Samsung, Xiaomi, etc.) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .profile-card {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .profile-circle {
+    width: 190px;
+    height: 190px;
+    font-size: 1.35rem;
+  }
+
+  .profile-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .profile-card p {
+    font-size: 0.88rem;
+  }
+
+  .stats span {
+    font-size: 1.1rem;
+  }
+
+  .about-content {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .highlight-box {
+    padding: 14px;
+  }
+
+  .highlight-box h4 {
+    font-size: 1rem;
+  }
+
+  .highlight-box li {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
 

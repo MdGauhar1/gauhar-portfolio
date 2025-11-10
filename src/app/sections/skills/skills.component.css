@@ -1,5 +1,5 @@
 .skills-section {
-  background-color: #ffffff;
+  background-color: #DCDCDC;
   color: rgb(255, 255, 255);
   padding: 60px 20px;
   text-align: center;
@@ -19,7 +19,7 @@
 }
 
 .skill-card {
-  background-color: #ffffff;
+  background-color: #DCDCDC;
   padding: 20px;
   border-radius: 10px;
   color: #3b82f6;
@@ -27,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+
   transition: transform 0.3s ease;
 }
 
@@ -41,7 +41,7 @@
 
 .skill-card span {
    font-size: 16px;
-  color: #124493;
+  color: #0e2c5d;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease;
