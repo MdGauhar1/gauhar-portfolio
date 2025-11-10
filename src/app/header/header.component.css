@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background-color:  #56657e;
+  background-color:  #223151;
   color: white;
   position: sticky;
   top: 0;
@@ -14,6 +14,7 @@
 .left {
   font-size: 25px;
   font-weight: bold;
+  color: #00d1b2;
 }
 
 .right a {
