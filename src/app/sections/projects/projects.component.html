@@ -1,14 +1,37 @@
-<div class="project-section"> 
-  <h2>Projects</h2>
 
-  <div class="project-card" *ngFor="let project of projects">
-    <h3>{{ project.title }}</h3>
-    <p><strong>Duration:</strong> {{ project.duration }} | <strong>Role:</strong> {{ project.role }}</p>
+<div class="project-section">
+  <h2 style="color: white;">Featured Projects</h2>
+  <p class="subtitle">A selection of enterprise-grade applications built with Spring Boot and modern cloud technologies</p>
 
-    <p><strong>Roles & Responsibilities:</strong></p>
-    <ul>
-      <li *ngFor="let item of project.responsibilities">{{ item }}</li>
-    </ul>
+  <div class="project-card" *ngFor="let project of projects" [class.featured]="project.featured">
+    <div class="image-container">
+      <!-- Replace with your project image or icon -->
+      <img *ngIf="project.image" [src]="project.image" alt="{{project.title}} image" />
+      <div *ngIf="!project.image" class="placeholder-icon">
+        <i class="fas fa-rocket"></i> <!-- FontAwesome or your custom icon -->
+      </div>
+    </div>
+
+    <div class="project-details">
+      <span *ngIf="project.featured" class="featured-badge">Featured</span>
+
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+
+      <div class="tech-tags">
+        <span *ngFor="let tech of project.techStack" class="tag">{{ tech }}</span>
+      </div>
+
+      <div class="project-buttons">
+        <a *ngIf="project.codeLink" [href]="project.codeLink" target="_blank" class="btn code-btn">
+          <i class="fab fa-github"></i> Code
+        </a>
+        <a *ngIf="project.demoLink" [href]="project.demoLink" target="_blank" class="btn demo-btn">
+          Live Demo
+        </a>
+      </div>
+    </div>
   </div>
-    <app-personal-projects></app-personal-projects>
+
+  <app-personal-projects></app-personal-projects>
 </div>

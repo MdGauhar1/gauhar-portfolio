@@ -2,8 +2,9 @@
   <h2>Skills</h2>
   <div class="skills-grid">
     <div class="skill-card" *ngFor="let skill of skills">
-      <i [class]="skill.icon"></i>
-      <span>{{ skill.name }}</span>
+    <!--  <i [class]="skill.icon"></i> -->
+      <img [src]="skill.icon" [alt]="skill.name + ' icon'" class="skill-icon" />
+      <span style="font-weight: bolder;">{{ skill.name }}</span>
     </div>
   </div>
 </section>

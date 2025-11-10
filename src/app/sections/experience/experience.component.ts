@@ -10,15 +10,15 @@ import { CommonModule } from '@angular/common';
 })
 export class ExperienceComponent {
   experience = [
-    // {
-    //   company: 'Microland',
-    //   role: 'Java Developer',
-    //   duration: 'Experience: 2 Years 5 Months'
-    // },
     {
       company: 'NeoSoft Technologies',
       role: 'Software Engineer',
       duration: 'Experience: 0 Years 7 Months'
-    }
+    },
+    // {
+    //   company: 'Microland',
+    //   role: 'Java Developer',
+    //   duration: 'Experience: 2 Years 5 Months'
+    // }
   ];
 }

@@ -1,6 +1,17 @@
-<h2>Experience</h2>
-<div *ngFor="let exp of experience" class="card">
-  <h3>{{ exp.company }}</h3>
-  <p>{{ exp.role }}</p>
-  <p class="note">{{ exp.duration }}</p>
-</div>
+<section class="experience-section">
+  <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+
+  <div class="vertical-timeline">
+    <div *ngFor="let exp of experience" class="vt-item">
+      <div class="vt-dot"></div>
+      <div class="vt-card">
+        <h3>{{ exp.company }}</h3>
+        <p class="role"><i class="fa-solid fa-user-tie"></i> {{ exp.role }}</p>
+        <p class="duration"><i class="fa-solid fa-calendar-days"></i> {{ exp.duration }}</p>
+        <p class="description">
+          Worked on designing and implementing scalable backend systems using Java, Spring Boot, and Hibernate.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
