@@ -31,11 +31,19 @@
 
   <!-- Contact Form Box -->
   <div class="contact-card form-card">
-    <form>
+
+    <form (submit)="sendMessage($event)">
+  <input type="text" placeholder="Your Name" name="name" required />
+  <input type="email" placeholder="Your Email" name="email" required />
+  <textarea rows="5" placeholder="Your Message" name="message" required></textarea>
+  <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+</form>
+
+    <!-- <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea rows="5" placeholder="Your Message"></textarea>
       <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-    </form>
+    </form> -->
   </div>
 </section>
