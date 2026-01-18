@@ -20,7 +20,7 @@ export class ProjectsComponent {
       codeLink: 'https://github.com/your-repo/nanhikali',
       demoLink: 'https://www.nanhikali.org/',
       featured: false,
-      image: 'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/nanhikali.png'
+      image: 'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/nanhikali.png?raw=true'
     },
 
 
@@ -31,7 +31,7 @@ export class ProjectsComponent {
       codeLink: 'https://github.com/your-repo/staynest',
       demoLink: 'https://kspl.site',
       featured: true,
-      image: 'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/ksplimage.png'
+      image: 'https://github.com/MdGauhar1/gauhar-portfolio/blob/main/src/assets/ksplimage.png?raw=true'
     }
   ];
 }
