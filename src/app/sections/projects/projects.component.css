@@ -48,7 +48,26 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .image-container img {
   width: 100%;
@@ -95,9 +114,18 @@
   color: #94a3b8;
 }
 
+/* .tech-tags {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+} */
+
 .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 20px;
 }
+
 
 .tag {
   display: inline-block;
@@ -113,7 +141,25 @@
 .project-buttons {
   display: flex;
   gap: 15px;
+  
 }
+
+@media (max-width: 600px) {
+  .project-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-buttons .btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
+
+
+
+
 
 .btn {
   display: inline-flex;

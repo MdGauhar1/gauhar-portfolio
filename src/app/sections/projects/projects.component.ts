@@ -20,7 +20,7 @@ export class ProjectsComponent {
       codeLink: 'https://github.com/your-repo/nanhikali',
       demoLink: 'https://www.nanhikali.org/',
       featured: false,
-      image: 'assets/nanhi kali.png'
+      image: '/assets/nanhi kali.png'
     },
 
 
@@ -31,7 +31,7 @@ export class ProjectsComponent {
       codeLink: 'https://github.com/your-repo/staynest',
       demoLink: 'https://kspl.site',
       featured: true,
-      image: 'assets/kspl image.png'
+      image: '/assets/kspl image.png'
     }
   ];
 }
