@@ -13,7 +13,7 @@ export class ContactComponent {
     const form = event.target;
     const formData = new FormData(form);
 
-    fetch('https://darkslateblue-crane-217273.hostingersite.com/sendMail.php', {
+    fetch('https://gauhar.kspl.site/mailer/sendMail.php', {
       method: 'POST',
       body: formData
     })

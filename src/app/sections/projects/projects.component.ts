@@ -16,11 +16,22 @@ export class ProjectsComponent {
     {
       title: 'Nanhikali',
       description: 'Developed the application using Spring Boot, ensuring a modular structure, easy configuration, and rapid development by setting up multiple profiles for different environments (dev, prod). Used Hibernate ORM for effective mapping, enabling seamless interaction between the application and database, while tuning performance with lazy/eager fetching and caching strategies. Implemented SMS and Email notification modules to send real-time updates to students and sponsors, integrating Twilio for SMS and JavaMailSender for email functionality.',
-      techStack: ['Spring Boot', 'Hibernate', 'Twilio', 'Caching'],
+      techStack: ['Spring Boot', 'Hibernate','MySQL', 'REST APIS', 'Twilio', 'Caching'],
       codeLink: 'https://github.com/your-repo/nanhikali',
-      demoLink: '',
+      demoLink: 'https://www.nanhikali.org/',
       featured: false,
-      image: ''
+      image: 'assets/nanhi kali.png'
+    },
+
+
+     {
+      title: 'Kawiz Services – MEP Solutions System',
+      description: 'Designed and developed a fully responsive corporate website for Kawiz Services Private Limited (KSPL) with modern UI/UX and optimized performance. Built a complete service showcase system including HVAC, Plumbing, Fire Protection, Electrical and Low Current solutions. Integrated Google Translate, dynamic PHP-based navigation highlighting, login/signup authentication with MySQL, and automated contact form submission via SMTP. Customized sidebar and call-to-action UI elements with theme colors for premium branding.',
+      techStack: ['HTML', 'CSS', 'MySQL', 'Bootstrap', 'PHP', 'SMTP Email Integration', 'cPanel / Hostinger Deployment'],
+      codeLink: 'https://github.com/your-repo/staynest',
+      demoLink: 'https://kspl.site',
+      featured: true,
+      image: 'assets/kspl image.png'
     }
   ];
 }
